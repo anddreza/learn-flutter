@@ -14,8 +14,8 @@ class myAp extends StatefulWidget {
 class _myApState extends State<myAp> {
   @override
   Widget build(BuildContext context) {
-    var assetsImage = new AssetImage('assets/images/flutter.png'); //<- Creates an object that fetches an image.
-    var image = new Image(image: assetsImage, fit: BoxFit.cover); //<- Creates a widget that displays an image.
+//    var assetsImage = new AssetImage('assets/images/flutter.png'); //<- Creates an object that fetches an image.
+ //   var image = new Image(image: assetsImage, fit: BoxFit.cover); //<- Creates a widget that displays an image.
 
     return MaterialApp(
       home: Scaffold(
@@ -29,7 +29,7 @@ class _myApState extends State<myAp> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(child: image),
+   //         Container(child: image),
             Text(
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard "
                 "dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen"
