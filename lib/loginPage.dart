@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'SignUpPage.dart';
 import 'HomePage.dart';
+import 'forgetPassword.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
   @override
   State<LoginPage> createState() => MyAppState();
+
 }
 
 class MyAppState extends State<LoginPage> {
-   get email => null;
+  String email = '';
+  String password = '';
 
   @override
   Widget build(BuildContext context) {
-    String email = '';
-    String password = '';
-
     return Scaffold(
       appBar: AppBar(
         title: const Text(
@@ -67,9 +67,9 @@ class MyAppState extends State<LoginPage> {
                         borderRadius: BorderRadius.circular(18),
                       ),
                     ),
-                    onChanged: (String value) {
+                    onChanged: (String text) {
                       setState(() {
-                        var email = value;
+                        email = text;
                       });
                     },
                     validator: (value) {
@@ -91,7 +91,11 @@ class MyAppState extends State<LoginPage> {
                           borderRadius: BorderRadius.circular(18),
                         ),
                       ),
-                      onChanged: (String value) {},
+                      onChanged: (String text) {
+                        setState(() {
+                          password = text;
+                        });
+                      },
                       validator: (value) {
                         return value!.isEmpty ? 'Please enter password' : null;
                       },
@@ -105,10 +109,9 @@ class MyAppState extends State<LoginPage> {
                     child: MaterialButton(
                         minWidth: double.infinity,
                         onPressed: () {
-                          if (email == 'andreza' && password == '123') {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                  builder: (context) => const HomePage()),
+                          if (email == 'and' && password == '123') {
+                            Navigator.of(context).pop(
+                              MaterialPageRoute(builder: (context) => HomePage()),
                             );
                           };
                       },
@@ -133,12 +136,9 @@ class MyAppState extends State<LoginPage> {
                 ),
               ),
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SignupPage()),
+                Navigator.of(context).push(
+                 MaterialPageRoute(builder: (context) => forgetPassword()),
                 );
-
-                //  Navigator.of(context).pushReplacementNamed(const SignupPage() as String);
               },
               child: const Text('Esqueceu a senha?'),
             ),
@@ -158,13 +158,17 @@ class MyAppState extends State<LoginPage> {
                 ),
               ),
               onPressed: () {
-                Navigator.push(
-                  context,
+                Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => SignupPage()),
                 );
               },
-              child: const Text('Ainda não tem cadastro?'),
+              child: const
+              Text('Ainda não tem cadastro?'),
             ),
+          ),
+
+          const SizedBox(
+            height: 10,
           ),
         ],
       ),

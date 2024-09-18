@@ -42,6 +42,7 @@ class _SignupState extends State<SignupPage> {
                         hintText: 'Enter name',
                         prefixIcon: Icon(Icons.account_box),
                         border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(18),
                         ),
                       ),
                       onChanged: (String value) {},
@@ -102,6 +103,24 @@ class _SignupState extends State<SignupPage> {
                         child: Text('Sign up'),
                         color: Colors.teal,
                         textColor: Colors.white,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 35),
+                      child: TextButton(
+                        style: TextButton.styleFrom(
+                          textStyle: const TextStyle(
+                            fontSize: 10,
+                            color: Colors.teal,
+                            fontWeight: FontWeight.bold,
+                            decoration: TextDecoration.underline,
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.of(context).pop(MaterialPageRoute(builder: (context) => LoginPage()),
+                          );
+                        },
+                        child: const Text('Voltar'),
                       ),
                     ),
                   ],
