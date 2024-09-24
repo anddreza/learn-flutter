@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'SignUpPage.dart';
-import 'HomePage.dart';
+import 'TimelinePage.dart';
 import 'forgetPassword.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
   @override
   State<LoginPage> createState() => MyAppState();
-
 }
 
 class MyAppState extends State<LoginPage> {
@@ -39,21 +38,15 @@ class MyAppState extends State<LoginPage> {
             ),
           ),
           const SizedBox(height: 20),
-          const Text(
-            'Welcome Back',
-            style: TextStyle(
-                fontSize: 35, color: Colors.teal, fontWeight: FontWeight.bold),
+          const Text('Welcome Back', style: TextStyle(fontSize: 35, color: Colors.teal, fontWeight: FontWeight.bold),
           ),
-          const Text(
-            'Enter your credential to login',
-            style: TextStyle(
-                fontSize: 10, color: Colors.teal, fontWeight: FontWeight.bold),
+          const Text('Enter your credential to login', style: TextStyle(fontSize: 10, color: Colors.teal, fontWeight: FontWeight.bold),
           ),
           const SizedBox(
-            height: 20,
+            height: 10,
           ),
           Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15),
+            padding: const EdgeInsets.symmetric(horizontal: 15),
             child: Form(
               child: Column(
                 children: <Widget>[
@@ -76,9 +69,7 @@ class MyAppState extends State<LoginPage> {
                       return value!.isEmpty ? 'Please enter email' : null;
                     },
                   ),
-                  const SizedBox(
-                    height: 30,
-                  ),
+                  const SizedBox(height: 10,),
                   Padding(
                     padding: const EdgeInsets.symmetric(),
                     child: TextFormField(
@@ -101,24 +92,22 @@ class MyAppState extends State<LoginPage> {
                       },
                     ),
                   ),
-                  const SizedBox(
-                    height: 20,
-                  ),
+                  const SizedBox(height: 20,),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 35),
+                    padding: const EdgeInsets.symmetric(horizontal: 45),
                     child: MaterialButton(
-                        minWidth: double.infinity,
-                        onPressed: () {
-                          if (email == 'and' && password == '123') {
-                            Navigator.of(context).pop(
-                              MaterialPageRoute(builder: (context) => HomePage()),
-                            );
-                          };
+                      minWidth: double.infinity,
+                      onPressed: () {
+                        if (email == 'and' && password == '123') {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context) => const HomePage()),
+                          );
+                        }
                       },
-                      child: Text('Login'),
                       color: Colors.teal,
                       textColor: Colors.white,
-                      ),
+                      child: const Text('Login'),
+                    ),
                   ),
                 ],
               ),
@@ -137,14 +126,11 @@ class MyAppState extends State<LoginPage> {
               ),
               onPressed: () {
                 Navigator.of(context).push(
-                 MaterialPageRoute(builder: (context) => forgetPassword()),
+                  MaterialPageRoute(builder: (context) => forgetPassword()),
                 );
               },
               child: const Text('Esqueceu a senha?'),
             ),
-          ),
-          const SizedBox(
-            height: 0,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 35),
@@ -162,13 +148,8 @@ class MyAppState extends State<LoginPage> {
                   MaterialPageRoute(builder: (context) => SignupPage()),
                 );
               },
-              child: const
-              Text('Ainda não tem cadastro?'),
+              child: const Text('Ainda não tem cadastro?'),
             ),
-          ),
-
-          const SizedBox(
-            height: 10,
           ),
         ],
       ),
