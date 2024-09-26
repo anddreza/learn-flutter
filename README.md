@@ -21,12 +21,12 @@ novo_projeto/lib/theme.dart
 ## Imagens:
 1. Tela de Cadastro 
 
-<img src="/home/andreza/AndroidStudioProjects/novo_projeto/assets/images/cadastro.jpg" width="150">
+<img src="assets/images/cadastro.jpg" width="150">
 
 2. Tela de 'Esqueci a senha'
 
-<img src="/home/andreza/AndroidStudioProjects/novo_projeto/assets/images/esqueci.jpg" width="150">
+<img src="assets/images/esqueci.jpg" width="150">
 
 3. Tela de 'Home'
 
-<img src="/home/andreza/AndroidStudioProjects/novo_projeto/assets/images/home.jpg" width="150">
+<img src="assets/images/home.jpg" width="150">
