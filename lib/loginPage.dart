@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'SignUpPage.dart';
-import 'TimelinePage.dart';
+import 'timeline/TimelinePage.dart';
 import 'forgetPassword.dart';
 
 class LoginPage extends StatefulWidget {

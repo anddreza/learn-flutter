@@ -1,0 +1,44 @@
+{
+  "mensagensMotivacionais": [
+    {
+      "id": 1,
+      "mensagem": "Acredite em si mesmo e em tudo o que você é. Saiba que há algo dentro de você que é maior que qualquer obstáculo."
+    },
+    {
+      "id": 2,
+      "mensagem": "O sucesso não é a chave para a felicidade. A felicidade é a chave para o sucesso. Se você ama o que faz, será bem-sucedido."
+    },
+    {
+      "id": 3,
+      "mensagem": "Não olhe para o relógio; faça o que ele faz. Continue avançando."
+    },
+    {
+      "id": 4,
+      "mensagem": "O único limite é a sua mente. Mantenha-se positivo, trabalhe duro e faça acontecer."
+    },
+    {
+      "id": 5,
+      "mensagem": "O futuro depende do que você faz hoje."
+    },
+    {
+      "id": 6,
+      "mensagem": "Não pare quando estiver cansado. Pare quando estiver terminado."
+    },
+    {
+      "id": 7,
+      "mensagem": "Quanto mais você se esforça por algo, maior será a sensação de conquista."
+    },
+    {
+      "id": 8,
+      "mensagem": "Empurre-se, porque ninguém mais vai fazer isso por você."
+    },
+    {
+      "id": 9,
+      "mensagem": "O sucesso é a soma de pequenos esforços repetidos dia após dia."
+    },
+    {
+      "id": 10,
+      "mensagem": "Grandes coisas nunca vêm de zonas de conforto."
+    }
+  ]
+}
