@@ -73,10 +73,12 @@ class MyAppState extends State<LoginPage> {
                   Padding(
                     padding: const EdgeInsets.symmetric(),
                     child: TextFormField(
+                      obscureText: true,
                       keyboardType: TextInputType.visiblePassword,
                       decoration: InputDecoration(
                         labelText: 'Password',
                         hintText: 'Enter password',
+
                         prefixIcon: const Icon(Icons.password),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(18),

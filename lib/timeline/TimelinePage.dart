@@ -11,7 +11,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-//  final String yMd = DateFormat.yMd().format(DateTime.now());
   final String formattedDate = DateFormat('dd/MM/yyyy').format(DateTime.now());
 
   String getPreviousDate(int daysAgo) {
@@ -62,7 +61,6 @@ class _HomePageState extends State<HomePage> {
         children: [
           Expanded(
             child: ListView(
-
               padding: const EdgeInsets.symmetric(horizontal: 50.0),
               children:  [
                 MyTimeLineTile(
@@ -86,9 +84,39 @@ class _HomePageState extends State<HomePage> {
                 ),
                 MyTimeLineTile(
                   isFirst: false,
+                  isLast: false,
+                  isPast: true,
+                  eventCard: "${getPreviousDate(3)} : O único limite é a sua mente.",
+                ),
+                MyTimeLineTile(
+                  isFirst: false,
+                  isLast: false,
+                  isPast: true,
+                  eventCard: "${getPreviousDate(4)} : Grandes coisas nunca vêm de zonas de conforto.",
+                ),
+                MyTimeLineTile(
+                  isFirst: false,
+                  isLast: false,
+                  isPast: true,
+                  eventCard: "${getPreviousDate(5)} : Empurre-se, porque ninguém mais vai fazer isso por você.",
+                ),
+                MyTimeLineTile(
+                  isFirst: false,
+                  isLast: false,
+                  isPast: true,
+                  eventCard: "${getPreviousDate(6)} : Não pare quando estiver cansado.",
+                ),
+                MyTimeLineTile(
+                  isFirst: false,
+                  isLast: false,
+                  isPast: true,
+                  eventCard: "${getPreviousDate(7)} : O único limite é a sua mente.",
+                ),
+                MyTimeLineTile(
+                  isFirst: false,
                   isLast: true,
                   isPast: true,
-                  eventCard: "${getPreviousDate(3)}  O único limite é a sua mente.",
+                  eventCard: "${getPreviousDate(8)} : O único limite é a sua mente.",
                 ),
               ],
             ),
