@@ -40,3 +40,7 @@ novo_projeto/lib/theme.dart
 5. Menu Lateral 
 
 <img src="assets/images/menu_hamburger.jpg" width="150">
+
+6. Vídeo funcionando: 
+
+Dentro da pasta lib 
