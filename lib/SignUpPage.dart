@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:novo_projeto/theme.dart';
 import 'loginPage.dart';
 
-class SignupPage extends StatefulWidget {const SignupPage({super.key});
-  
+class SignupPage extends StatefulWidget {
+  const SignupPage({super.key});
+
   @override
-  State<SignupPage> createState() => _SignupState();}
+  State<SignupPage> createState() => _SignupState();
+}
 
 class _SignupState extends State<SignupPage> {
   @override
@@ -14,22 +16,28 @@ class _SignupState extends State<SignupPage> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Sign up", style: TextStyle(color: Colors.black),),
-          backgroundColor: Colors.green,),
-
+            // title: const Text("Sign up", style: TextStyle(color: Colors.black),),
+            //backgroundColor: Colors.green,
+            ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
-
           children: [
+            SizedBox(
+                width: 100,
+                height: 100,
+                child: ClipRRect(
+                  borderRadius: const BorderRadius.all(Radius.circular(30)),
+                  child: Image.asset('assets/images/motivation.png'),
+                )),
+            const SizedBox(height: 20),
             Text(
               'Cadastro',
               style: TextStyle(
-                  fontSize: 35,
-                  color: Colors.green,
-                  fontWeight: FontWeight.bold),
+                  fontSize: 25,
+                  color: Colors.teal, fontWeight: FontWeight.bold
+              ),
             ),
-
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15),
               child: Form(
@@ -50,10 +58,11 @@ class _SignupState extends State<SignupPage> {
                         return value!.isEmpty ? 'Please enter name' : null;
                       },
                     ),
-
-                    SizedBox(height: 20,),
-
-                    Padding( //espaçamento interno no elemento
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Padding(
+                      //espaçamento interno no elemento
                       padding: EdgeInsets.symmetric(),
                       child: TextFormField(
                         keyboardType: TextInputType.visiblePassword,
@@ -71,9 +80,9 @@ class _SignupState extends State<SignupPage> {
                         },
                       ),
                     ),
-
-                    SizedBox(height: 20,),
-
+                    SizedBox(
+                      height: 20,
+                    ),
                     Padding(
                       padding: EdgeInsets.symmetric(),
                       child: TextFormField(
@@ -94,7 +103,9 @@ class _SignupState extends State<SignupPage> {
                         },
                       ),
                     ),
-                    SizedBox(height: 30,),
+                    SizedBox(
+                      height: 30,
+                    ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 30),
                       child: MaterialButton(
@@ -117,7 +128,9 @@ class _SignupState extends State<SignupPage> {
                           ),
                         ),
                         onPressed: () {
-                          Navigator.of(context).pop(MaterialPageRoute(builder: (context) => LoginPage()),
+                          Navigator.of(context).pop(
+                            MaterialPageRoute(
+                                builder: (context) => LoginPage()),
                           );
                         },
                         child: const Text('Voltar'),

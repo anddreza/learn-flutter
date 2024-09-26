@@ -29,6 +29,15 @@ class _forgetPasswordState extends State<forgetPassword> {
             ),
           ),
           const SizedBox(height: 20),
+          Text(
+            'Esqueceu a senha? '
+                'Insira o email!',
+            style: TextStyle(
+                fontSize: 15,
+                color: Colors.teal, fontWeight: FontWeight.bold
+            ),
+          ),
+          const SizedBox(height: 20),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
             child: Form(

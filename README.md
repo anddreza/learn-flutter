@@ -28,4 +28,5 @@ novo_projeto/lib/theme.dart
 <img src="/home/andreza/AndroidStudioProjects/novo_projeto/assets/images/esqueci.jpg" width="150">
 
 3. Tela de 'Home'
+
 <img src="/home/andreza/AndroidStudioProjects/novo_projeto/assets/images/home.jpg" width="150">
