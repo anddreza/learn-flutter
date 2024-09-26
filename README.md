@@ -14,6 +14,8 @@ Essa é um projeto criado para inserir os conhecimentos adquiridos dentro de sal
 ## Bibliotecas
 flutter pub add intl
 
+## Cores usadas:
+teal, green, tealAccent, Color(4289909129)(4281683477),
 
 ### Cores utilizadas durante o projeto até o momento...
 novo_projeto/lib/theme.dart
@@ -30,3 +32,11 @@ novo_projeto/lib/theme.dart
 3. Tela de 'Home'
 
 <img src="assets/images/home.jpg" width="150">
+
+4. Tela de 'Timeline'
+
+<img src="assets/images/timeline.jpg" width="150">
+
+5. Menu Lateral 
+
+<img src="assets/images/menu_hamburger.jpg" width="150">
