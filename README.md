@@ -1,6 +1,6 @@
 <h2 align="center">🌿Motivation🌿</h2>
 <h1 align="center">
-<img src="/home/andreza/AndroidStudioProjects/novo_projeto/assets/images/motivation.png" width="150">
+<img src="assets/images/motivation.png" width="150">
 
 </h1>
 
