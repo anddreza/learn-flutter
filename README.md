@@ -20,6 +20,11 @@ teal, green, tealAccent, Color(4289909129)(4281683477),
 ### Cores utilizadas durante o projeto até o momento...
 novo_projeto/lib/theme.dart
 
+## Conexão com o banco de dados utilizando essa:
+firebase_core: ^3.6.0: https://pub.dev/packages/firebase_core/install
+flutter pub add cloud_firestore: https://pub.dev/packages/cloud_firestore/install
+
+
 ## Imagens:
 1. Tela de Cadastro 
 
@@ -44,3 +49,4 @@ novo_projeto/lib/theme.dart
 6. Vídeo funcionando: 
 
 Dentro da pasta lib 
+
