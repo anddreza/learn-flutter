@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:novo_projeto/loginPage.dart';
-import 'SignUpPage.dart';
+import 'package:novo_projeto/pages/loginPage.dart';
+import 'pages/SignUpPage.dart';
 import 'timeline/TimelinePage.dart';
-import 'forgetPassword.dart';
+import 'pages/forgetPasswordPage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class WelcomePage extends StatefulWidget {
