@@ -45,3 +45,4 @@ app.*.map.json
 /lib/atividades/
 lib/atividades
 firebase_options.dart
+/lib/confgs/*.dart
