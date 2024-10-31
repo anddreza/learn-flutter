@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'SignUpPage.dart';
-import 'timeline/TimelinePage.dart';
-import 'forgetPassword.dart';
+import '../timeline/TimelinePage.dart';
+import 'forgetPasswordPage.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -18,17 +18,22 @@ class MyAppState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(143, 188, 143, 63),
-      body: Stack(
+      body: SingleChildScrollView(
+      child: Stack(
           children: [
-            Opacity(
-           //    key: -80!,
-              // top: 0,
-              // bottom: 0,
-              opacity: 0.5,
-              child: Image.asset(
-                'assets/images/para_fundo_tela_login.png',
-                fit: BoxFit.cover,
+            SizedBox(
+              width: 250,
+              height: 250,
+            child: Positioned(
+              right: -150,
+                child: Opacity(
+                  opacity: 0.5,
+                  child: Image.asset(
+                      'assets/images/para_fundo_tela_login.png',
+                      fit: BoxFit.cover,
               ),
+            ),
+          ),
             ),
         Center(
           child: Column(
@@ -36,8 +41,8 @@ class MyAppState extends State<LoginPage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(
-                width: 100,
-                height: 100,
+                width: 150,
+                height: 150,
                 child: ClipRRect(
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                   child: Image.asset('assets/images/motivation.png'),
@@ -78,6 +83,7 @@ class MyAppState extends State<LoginPage> {
                             borderRadius: BorderRadius.circular(18),
                           ),
                         ),
+                        
                         onChanged: (String text) {
                           setState(() {
                             email = text;
@@ -181,6 +187,6 @@ class MyAppState extends State<LoginPage> {
           ),
         )
       ]),
-    );
+    ));
   }
 }
