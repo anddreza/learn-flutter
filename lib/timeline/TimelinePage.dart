@@ -7,7 +7,8 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:novo_projeto/models/timeline.dart';
 import 'package:novo_projeto/timeline/components/my_timeline.dart';
-import '../loginPage.dart';
+import '../crud/crud_thinks.dart';
+import '../pages/loginPage.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 import '../models/timeline.dart';
@@ -111,7 +112,7 @@ class _HomePageState extends State<HomePage> {
                     isPast: true,
                     eventCard:
                     " ${getPreviousDate(
-                        1)} : $mensagemSelecionada",
+                        1)} : Não olhe para o relógio; faça o que ele faz. Continue avançando.",
                   ),
                   MyTimeLineTile(
                     isFirst: false,
@@ -170,6 +171,19 @@ class _HomePageState extends State<HomePage> {
             ),
           ],
         ),
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                    builder: (context) => const CadastroPensamentos()),
+              );
+            },
+            backgroundColor: Colors.greenAccent,
+            child: Icon(
+              Icons.add,
+              color: Colors.white,
+            ),
+          )
       );
     }
   }
